@@ -1,10 +1,10 @@
 # mini-thread
 
-###Simple nodejs thread implementation
->#####Install
+### Simple nodejs thread implementation
+>##### Install
 >``npm i mini-thread -S``
 
->####Use
+>#### Use
 >```javascript
 >const thread = require('mini-thread');
 >let responses = [],
