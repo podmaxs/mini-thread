@@ -32,7 +32,7 @@ module.exports = function(method, name){
         })
     }
 
-    function run(arg, scriptSrc){
+    async function run(arg, scriptSrc){
         self.pool = self.pool + 1;
         var file = `.Thread_${self.pool}${new Date().getTime()}.js`;
         if(name !== undefined)
@@ -78,8 +78,14 @@ module.exports = function(method, name){
                 try {
                     var response;
                     eval(scriptSrc);
-                    self.emit('message', response);
+                    if (response instanceof Promise) {
+                        let promiseResponse  = await response;
+                        self.emit('message', promiseResponse);
+                    } else {    
+                        self.emit('message', response);
+                    }
                 } catch (e) {
+                    console.log(e, scriptSrc)
                     self.emit('error', e);
                 }
            }

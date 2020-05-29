@@ -7,7 +7,7 @@ module.exports = function(method, name){
     this.EVENT_PROCESS = [];
    
     self.createFork = function(){
-        self.prd = fork('./controller.js');
+        self.prd = fork(__dirname+'/controller.js');
     
         self.prd.on('message', (eventData) => {
             if(eventData.type === 'success') {

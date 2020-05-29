@@ -1,6 +1,6 @@
 {
   "name": "mini-thread",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "create threads in node",
   "main": "index.js",
   "scripts": {
