@@ -1,0 +1,14 @@
+{
+  "name": "mini-thread",
+  "version": "1.0.2",
+  "description": "create threads in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "podmaxs",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
