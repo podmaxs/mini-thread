@@ -1,6 +1,6 @@
 {
   "name": "mini-thread",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "create threads in node",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "podmaxs",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/podmaxs/mini-thread"
+  },
   "dependencies": {
     "fs": "0.0.1-security"
   }
